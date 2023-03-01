@@ -186,6 +186,11 @@ footer{
 }
 .dashboard-events-container th{
     width: 25%;
+
+}
+
+.dashboard-events-container form{
+    display: inline-block;
 }
 footer p{
     margin-bottom: 0;
@@ -199,4 +204,5 @@ footer p{
 
 #items-list li{
     display: flex;
+    list-style: none;
 }
