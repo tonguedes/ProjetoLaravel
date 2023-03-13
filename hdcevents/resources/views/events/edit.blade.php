@@ -21,11 +21,11 @@
         </div>
         <div class="form-group">
             <label for="title">Data do Evento Evento:</label>
-          <input type="date" class="form-control" id="date" name="date" placeholder="nome  do evento">
+          <input type="date" class="form-control" id="date" name="date" placeholder="nome  do evento"value="{{$event->date->format('y-m-d')}}">
         </div>
         <div class="form-group">
             <label for="title">Cidade:</label>
-          <input type="text" class="form-control" id="city" name="city" placeholder="Local do evento">
+          <input type="text" class="form-control" id="city" name="city" placeholder="Local do evento" value="{{$event->city}}">
         </div>
 
         <div class="form-group">
@@ -37,7 +37,7 @@
             <label for="title">O evento é privado?:</label>
           <select name="private" id="private" class="form-control">
             <option value="0">Não</option>
-            <option value="1">Sim</option>
+            <option value="1 " {{#event->private ==1 ? "selected='selected'":""}}>Sim</option>
           </select>
         </div>
 

@@ -76,6 +76,11 @@ header{
     width: 50%;
     margin: 0 auto;
 }
+/*edit preview*/
+.img-preview{
+    width: 100px;
+    margin-top: 20px;
+}
 
 /* EVent List */
 #events-container{
